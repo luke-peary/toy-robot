@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "robot": "./src/index.js",
+    "robot": "node src/index.js",
     "test": "jest --coverage"
   },
   "author": "",
