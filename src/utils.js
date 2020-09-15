@@ -6,10 +6,11 @@ const isPermitted = (pos) => {
 
 const canPlace = (x, y) => {
   if (!isPermitted(x) || !isPermitted(y)) {
-    const message = chalk.yellow(
-      "You must place the robot on the table by using coordinates between 0 and 5."
+    console.log(
+      chalk.yellow(
+        "You must place the robot on the table by using coordinates between 0 and 5."
+      )
     );
-    console.log(message);
 
     return false;
   }
