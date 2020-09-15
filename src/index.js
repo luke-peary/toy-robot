@@ -1,7 +1,6 @@
 const fs = require("fs");
 const chalk = require("chalk");
 const { left, right, place, move, report } = require("./actions");
-const { canPlace, placeArgs } = require("./utils");
 const commands = fs.readFileSync("input.txt").toString().split("\n");
 
 const instruct = (command, arguments) => {

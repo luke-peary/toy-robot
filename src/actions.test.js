@@ -1,5 +1,5 @@
 const robot = require("./robot");
-const { left, right, place, move, report } = require("./actions");
+const { left, right, place, move } = require("./actions");
 
 beforeEach(() => {
   robot.reset();

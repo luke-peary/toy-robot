@@ -1,5 +1,4 @@
 const chalk = require("chalk");
-const robot = require("./robot");
 
 const isPermitted = (pos) => {
   return pos >= 0 && pos <= 5;
