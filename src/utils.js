@@ -13,7 +13,6 @@ const canPlace = (x, y) => {
 
     return false;
   }
-  console.log("can place");
 
   return true;
 };

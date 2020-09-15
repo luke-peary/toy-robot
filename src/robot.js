@@ -1,4 +1,4 @@
-let robot = {
+const robot = {
   posY: 0,
   posX: 0,
   facing: "",

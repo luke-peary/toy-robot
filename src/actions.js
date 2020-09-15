@@ -30,8 +30,6 @@ const place = (args) => {
 
   if (!canPlace(x, y)) return;
 
-  console.log("still going");
-
   robot.posX = x;
   robot.posY = y;
   robot.facing = f.toUpperCase();
@@ -39,6 +37,8 @@ const place = (args) => {
 };
 
 const move = () => {
+  if (!robot.isPlaced) return;
+
   switch (robot.facing) {
     case "NORTH":
       isPermitted(robot.posY + 1) && ++robot.posY;

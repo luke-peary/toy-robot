@@ -19,7 +19,6 @@ describe("PLACE", () => {
   });
 
   it("should not allow placement beyond the table", () => {
-    console.log(robot);
     place("3,6,SOUTH");
 
     expect(robot.isPlaced).toBe(false);
